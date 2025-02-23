@@ -1,0 +1,24 @@
+\startenvironment env_book
+
+% Assume source files are UTF-8
+\enableregime[utf]
+
+% Set up PDF metadata
+\setupinteraction[state=start, title=In Stellis Veritas, author=Astral Frontier]
+\setupbackend[format=PDF/X-1a:2003, intent=SWOP2006_Coated5v2.icc]
+
+% Page size is US-Letter
+\setuppapersize[letter,portrait]
+
+% Page numbers are at the bottom
+\setuppagenumbering[]
+\setupheadertexts[In Stellis Veritas]
+\setupfootertexts[chapter][pagenumber]
+
+% Space between paragraphs
+\setupwhitespace[halfline]
+
+% Don't add extra whitespace in itemized lists
+\setupitemize[packed]
+
+\stopenvironment
